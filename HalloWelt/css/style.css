@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+header {
+    min-width: 100%;
+    min-height: 200px;
+    background-color: rgb(175, 255, 235);
+}
+
+
+nav {
+    float: left;
+    min-width: 100px;
+    max-width: 100px;
+    background-color: rgb(255, 208, 0);
+}
+
+main {
+    float: left;
+    min-width: 600px;
+    max-width: 600px;
+    background-color: rgba(255, 105, 180, 0.192);
+}
+
+footer {
+    clear: both;
+    background-color: rgba(167, 209, 94, 0.463);
+    min-width: 100%;
+}
+
+article {
+    margin: 10px;
+    background-color: rgba(255, 105, 180, 0.581);
+}
+
+h1 {
+    color: black;
+    font-weight: bold;
+}

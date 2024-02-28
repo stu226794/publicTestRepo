@@ -1,0 +1,99 @@
+:root {
+    font-size: 16px;
+    --my-padding-left: 1rem;
+
+    --my-block-min-size: 250;
+    --my-block-max-size: 250;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div#container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    min-height: 100vh;
+}
+
+div#container2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+
+}
+div#container3 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+
+}
+
+div.blockDiv {
+    margin: 10px;
+    background-color: rgba(148, 42, 254, 0.458);
+    min-height: 150px;
+    min-width: 150px;
+    text-align: center;
+
+}
+
+h1.container2-h1 {
+    text-align: center;
+
+}
+
+header {
+    min-width: 100%;
+    min-height: 200px;
+    background-color: rgb(175, 255, 235);
+}
+
+
+nav {
+    background-color: rgb(255, 208, 0);
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 200px;
+}
+main {
+    background-color: rgba(255, 105, 180, 0.192);
+    grid-column: 2;
+    grid-row: 1;
+}
+footer {
+    clear: both;
+    background-color: rgba(167, 209, 94, 0.463);
+    min-width: 100%;
+}
+article {
+    background-color: rgba(255, 105, 180, 0.581);
+    margin: 1rem;
+    padding: var(--my-padding-left);
+}
+
+
+h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 3rem;
+    padding: var(--my-padding-left);
+}
+p {
+    font-size: 1rem;
+    padding: var(--my-padding-left);
+}
+
+@media screen and (max-width: 600px) {
+   div#container {
+    grid-template-columns: 1fr;
+   }
+
+   div#container2 {
+    grid-template-columns: auto auto;
+
+   }
+   main {
+    grid-column: 1;
+    grid-row: 2;
+}
+}
